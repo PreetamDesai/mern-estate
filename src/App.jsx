@@ -4,16 +4,20 @@ import Home from './pages/Home';
 import SignUp from './Pages/SignUp';
 import Profile from './pages/Profile';
 import About from './pages/About';
+import Header from './Components/Header';
+import Adopt from './Pages/Adopt.Jsx';
 
 export default function App() {
   return (
     <BrowserRouter>
+    <Header />
     <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/sign-in' element={<Login />} />
         <Route path='/sign-up' element={<SignUp />} />
         <Route path='/profile' element={<Profile />} />
         <Route path='/about' element={<About />} />
+        <Route path='/adopt' element={<Adopt />} />
     </Routes>
     </BrowserRouter>
   )
